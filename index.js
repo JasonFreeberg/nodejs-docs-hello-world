@@ -4,8 +4,8 @@ const server = http.createServer((request, response) => {
     response.writeHead(200, {"Content-Type": "text/plain"});
     response.end("Hello World!");
     
-    
-    console.log("Hello from the server response method.")
+    var datetime = new Date().toString();
+    console.log("Hello from the server response method. .... "+datetime)
 });
 
 const port = process.env.PORT || 1337;
