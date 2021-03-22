@@ -15,6 +15,8 @@ const server = http.createServer((request, response) => {
 
     console.log(request.headers)
 
+    console.log("IP address: "+request.socket.remoteAddress)
+
 });
 
 
