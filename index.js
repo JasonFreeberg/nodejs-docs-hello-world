@@ -13,6 +13,7 @@ const server = http.createServer((request, response) => {
         console.log("Hello from the server response method. .... "+datetime)
     }
 
+    console.log(request.headers)
 
 });
 
